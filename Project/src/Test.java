@@ -6,6 +6,7 @@ public class Test{
         printLines(100);
         System.out.println();
         System.out.println("After SSH Key");
+        System.out.println("test pw");
     }
     public static void printLines(int n){
         for (int i = 0; i < n; i++) {
