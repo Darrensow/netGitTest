@@ -1,16 +1,19 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
 public class Test{
     public static void main(String[] args) {
-        System.out.println("test");
-        int num = 123;
-        System.out.println("Test number is " + 123);
-        printLines(100);
-        System.out.println();
-        System.out.println("After SSH Key");
-        System.out.println("test pw");
-    }
-    public static void printLines(int n){
-        for (int i = 0; i < n; i++) {
-            System.out.print("_");
+        try{
+            Scanner input = new Scanner(new FileInputStream("Files\\data.txt"));
+            while (input.hasNextLine()) {
+                String str = input.nextLine();
+                System.out.println(str);
+            }
+            input.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File was not found");
         }
     }
 }
