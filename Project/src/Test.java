@@ -15,5 +15,10 @@ public class Test{
         } catch (FileNotFoundException e) {
             System.out.println("File was not found");
         }
+        System.out.println("Testing");
+    }
+
+    public static boolean test(){
+        return false;
     }
 }
