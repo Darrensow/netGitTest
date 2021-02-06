@@ -16,6 +16,9 @@ public class Test{
             System.out.println("File was not found");
         }
         System.out.println("Testing");
+
+        System.out.println();
+        System.out.println();
     }
 
     public static boolean test(){
